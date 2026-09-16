@@ -21,6 +21,8 @@ jobs:
               run: test -f index.js
     
     validate-code:
+        # needs: [validate-html, validate-js]  # This line indicates that the validate-code job depends on the successful completion of both validate-html and validate-js jobs.
+        needs: [validate-html, validate-js]
         runs-on: ubuntu-latest
         steps:
             - name: clone repository
