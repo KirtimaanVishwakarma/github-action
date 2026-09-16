@@ -11,9 +11,9 @@ jobs:
             - name: validate html file
               run: |
                   echo "Validating HTML file..."
-                  test -f file.html
+                  test -f index.html
 
             - name: validate js file
               run: |
                   echo "Validating JavaScript file..."
-                  test -f file.js
+                  test -f index.js
