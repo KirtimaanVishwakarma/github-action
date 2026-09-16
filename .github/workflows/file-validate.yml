@@ -21,4 +21,4 @@ jobs:
             - name: validate js code
               run: |
                   echo "Validating JavaScript code..."
-                  node index.js
+                  node --check index.js
