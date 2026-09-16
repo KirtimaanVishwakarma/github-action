@@ -1,0 +1,19 @@
+name: File Validation Workflow
+on: push
+
+jobs:
+    validate-files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: clone repository
+              uses: actions/checkout@v4
+
+            - name: validate html file
+              run: |
+                  echo "Validating HTML file..."
+                  test -f file.html
+
+            - name: validate js file
+              run: |
+                  echo "Validating JavaScript file..."
+                  test -f file.js
