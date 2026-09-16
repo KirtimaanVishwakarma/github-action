@@ -1,5 +1,9 @@
 name: Jobs Tests
-on: push
+on:
+    workflow_run:
+        workflows: ["File Validation Workflow"]
+        types:
+            - completed
 
 jobs:
     validate-html:
