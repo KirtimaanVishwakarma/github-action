@@ -1,7 +1,7 @@
 name: Jobs Tests
 on:
     workflow_run:
-        workflows: ["File Validation Workflow"]
+        workflows: ["First Workflow"]
         types:
             - completed
 
