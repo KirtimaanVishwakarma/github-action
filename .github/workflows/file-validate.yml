@@ -17,3 +17,8 @@ jobs:
               run: |
                   echo "Validating JavaScript file..."
                   test -f index.js
+
+            - name: validate js code
+              run: |
+                  echo "Validating JavaScript code..."
+                  node index.js
