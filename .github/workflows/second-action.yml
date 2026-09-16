@@ -1,0 +1,17 @@
+name: Second Action Workflow
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Welcome to the second action workflow"
+        run: echo "This is the first job of the second action workflow."
+  
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "This is the second job"
+        run: echo "This job runs after the first job in the second action workflow."
