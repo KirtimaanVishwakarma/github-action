@@ -1,1 +1,1 @@
-console.log("github action validator 
+console.log("github action validator log");
